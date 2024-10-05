@@ -22,7 +22,7 @@ const PasswordResults: React.FC = () => {
         <span className={styles.titleResults}>Результаты</span>
         <div className={styles.passwordList}>
           {passwords.map((password, index) => (
-            <PasswordItem key={index} style={{ width: '545px' }}>
+            <PasswordItem key={index} style={{ width: 540 }}>
               <span className={styles.password}>
                 {password}
               </span>

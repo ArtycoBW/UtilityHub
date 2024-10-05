@@ -6,12 +6,13 @@
 	justify-content: space-between;
 	padding: 20px 180px;
 	height: var(--header-height);
-	font-family: var(--font-typeface-regular);
+	
 
 	.links {
 		display: flex;
 		gap: 32px;
 		color: var(--gray-400);
+		font-family: var(--font-typeface-regular);
 
 		.link {
 			text-decoration: none;
