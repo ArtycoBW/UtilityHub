@@ -1,11 +1,36 @@
 .page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
 	width: 100vw;
-	background-color: #363646;
-}
 
-.button {
-	font-size: 16px;
-	line-height: 24px;
-	font-family: var(--font-typeface-book);
+	.inputSection {
+		padding: 20px;
+		display: grid;
+		border-bottom: 2px solid var(--gray-800);
+
+		.title {
+			color: var(--main-color);
+			font-size: 16px;
+			line-height: 24px;
+			font-family: var(--font-typeface-book);
+		}
+
+		.subtitle {
+			color: var(--gray-400);
+			font-family: var(--font-typeface-regular);
+			font-size: 14px;
+			line-height: 20px;
+			padding: 8px 0 16px 0;
+		}
+	}
+
+	.actionsSection {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+		padding: 24px;
+	}
 }

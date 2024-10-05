@@ -10,9 +10,18 @@ interface InputProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
   value?: string
   placeholder?: string
+  disabled?: boolean
 }
 
-const Input: React.FC<InputProps> = ({ width, height, style, onChange, value, placeholder='Введите данные' }) => {
+const Input: React.FC<InputProps> = ({
+  width,
+  height,
+  style,
+  onChange,
+  value,
+  placeholder = 'Введите данные',
+  disabled,
+}) => {
   return (
     <input
       className={styles.input}
@@ -20,6 +29,7 @@ const Input: React.FC<InputProps> = ({ width, height, style, onChange, value, pl
       onChange={onChange}
       value={value}
       placeholder={placeholder}
+      disabled={disabled}
     />
   )
 }
