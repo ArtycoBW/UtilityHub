@@ -1,0 +1,41 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 10, 10, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+	background-color: var(--gray-950);
+	border: 1px solid var(--gray-800);
+	border-radius: 8px;
+	padding: 20px;
+	width: 400px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+	gap: 20px;
+	position: relative;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+	color: var(--gray-400);
+  font-size: 26px;
+  cursor: pointer;
+	position: absolute;
+  top: -25px;
+  right: -25px;
+}
+
+.modalContent {
+	color: var(--gray-400);
+	font-size: 16px;
+}

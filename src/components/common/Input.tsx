@@ -8,9 +8,11 @@ interface InputProps {
   height?: string
   style?: React.CSSProperties
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
-  value?: string
+  value?: string | number
   placeholder?: string
   disabled?: boolean
+  type?: 'text' | 'checkbox'
+  checked?: boolean
 }
 
 const Input: React.FC<InputProps> = ({
@@ -21,15 +23,19 @@ const Input: React.FC<InputProps> = ({
   value,
   placeholder = 'Введите данные',
   disabled,
+  type = 'text',
+  checked,
 }) => {
   return (
     <input
-      className={styles.input}
+      className={type === 'text' ? styles.inputText : styles.inputCheckbox}
       style={{ width, height, ...style }}
       onChange={onChange}
-      value={value}
-      placeholder={placeholder}
+      value={type === 'checkbox' ? undefined : value}
+      placeholder={type === 'text' ? placeholder : undefined}
       disabled={disabled}
+      type={type}
+      checked={type === 'checkbox' ? checked : undefined}
     />
   )
 }
