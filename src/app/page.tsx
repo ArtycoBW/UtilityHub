@@ -1,4 +1,4 @@
-import InputSection from '@/components/common/inputSection'
+import InputSection from '@/components/common/InputSection'
 import styles from '@styles/page.module.scss'
 
 export default function Home() {

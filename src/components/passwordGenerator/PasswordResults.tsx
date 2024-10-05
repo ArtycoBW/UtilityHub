@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import Card from '@components/common/Card'
 import { usePasswordStore } from '@/store/usePasswordsStore'
 import styles from '@styles/PasswordGenerator.module.scss'
 import PasswordItem from './PasswordItem'
-import { Button } from '@components/common'
+import { Button, Modal, Card } from '@components/common'
 import Image from 'next/image'
-import Modal from '@components/common/Modal'
 
 const PasswordResults: React.FC = () => {
   const { passwords } = usePasswordStore()
