@@ -1,0 +1,45 @@
+.header {
+	align-items: center;
+	background: rgba(10, 10, 10, 0.9);
+	border-bottom: 1px solid var(--gray-800);
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 180px;
+	height: 64px;
+	font-family: var(--font-typeface-regular);
+
+	.links {
+		display: flex;
+		gap: 32px;
+		color: var(--gray-400);
+
+		.link {
+			text-decoration: none;
+			color: var(--gray-400);
+			cursor: pointer;
+			transition: all 0.3s;
+			font-size: 14px;
+
+			&:hover {
+				color: var(--main-color);
+			}
+		}
+	}
+
+	.user {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		color: var(--gray-400);
+
+		.username {
+			font-size: 14px;
+			color: var(--main-color);
+		}
+
+		.avatar {
+			border-radius: 50%;
+		}
+	}
+}
+
