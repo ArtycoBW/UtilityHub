@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { generatePassword } from '@utils/generatePassword'
+import { generatePassword } from '@/utils/generatePassword'
 import { Button, Input, Modal, Card } from '@components/common'
 import styles from '@styles/PasswordGenerator.module.scss'
 import { usePasswordStore } from '@/store/usePasswordsStore'

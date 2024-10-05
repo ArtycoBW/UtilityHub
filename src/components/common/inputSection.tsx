@@ -48,10 +48,16 @@ const InputSection = () => {
         />
       </div>
       <div className={styles.actionsSection}>
-        <Button disabled={isDisabled} onClick={() => handleSaveName('/calculator')} style={disabledStyle}>
+        <Button
+          disabled={isDisabled}
+          onClick={() => handleSaveName('/calculator')}
+          style={{ boxShadow: 'inset 0 2px 0 0 #ffffff', ...disabledStyle }}>
           Открыть калькулятор
         </Button>
-        <Button disabled={isDisabled} onClick={() => handleSaveName('/password-generator')} style={disabledStyle}>
+        <Button
+          disabled={isDisabled}
+          onClick={() => handleSaveName('/password-generator')}
+          style={{ boxShadow: 'inset 0 2px 0 0 #ffffff', ...disabledStyle }}>
           Открыть генератор
         </Button>
       </div>
