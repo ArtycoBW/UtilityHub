@@ -1,5 +1,16 @@
 import { useState, useEffect, useCallback } from 'react'
 
+/**
+ * Пользовательский хук для реализации логики калькулятора.
+ *
+ * @returns {Object} Объект с текущим состоянием калькулятора и методами для взаимодействия.
+ * @property {string} displayValue - Текущее значение, отображаемое на дисплее калькулятора.
+ * @property {string} expression - Текущее выражение, вводимое пользователем.
+ * @property {string | null} result - Результат последнего вычисления (если есть).
+ * @property {string} errorMessage - Сообщение об ошибке (если есть).
+ * @property {function(string): void} handleButtonClick - Обработчик нажатий кнопок на интерфейсе калькулятора.
+ */
+
 export const useCalculator = () => {
   const [displayValue, setDisplayValue] = useState('0')
   const [operator, setOperator] = useState<string | null>(null)

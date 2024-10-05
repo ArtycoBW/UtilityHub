@@ -1,3 +1,15 @@
+import { symbols } from "./constants"
+
+/**
+ * Опции для генерации пароля.
+ * @typedef {Object} GeneratePasswordOptions
+ * @property {number} length - Длина генерируемого пароля.
+ * @property {boolean} includeUppercase - Включать ли заглавные буквы.
+ * @property {boolean} includeLowercase - Включать ли строчные буквы.
+ * @property {boolean} includeNumbers - Включать ли цифры.
+ * @property {boolean} includeSymbols - Включать ли символы.
+ * @property {boolean} avoidRepeating - Избегать ли повторяющихся символов.
+ */
 interface GeneratePasswordOptions {
   length: number
   includeUppercase: boolean
@@ -7,8 +19,12 @@ interface GeneratePasswordOptions {
   avoidRepeating: boolean
 }
 
-const symbols = '%^&*!@#$~'
-
+/**
+ * Генерирует случайный пароль на основе заданных опций.
+ *
+ * @param {GeneratePasswordOptions} options - Опции для генерации пароля.
+ * @returns {string} Сгенерированный пароль или сообщение об ошибке, если опции неверны.
+ */
 export const generatePassword = (options: GeneratePasswordOptions): string => {
   const { length, includeUppercase, includeLowercase, includeNumbers, includeSymbols, avoidRepeating } = options
 

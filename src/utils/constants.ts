@@ -33,3 +33,5 @@ export const buttons = [
     style: { backgroundColor: 'var(--token-button-white)' },
   },
 ]
+
+export const symbols = '%^&*!@#$~'
