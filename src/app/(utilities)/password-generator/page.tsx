@@ -1,10 +1,6 @@
 import React from 'react'
-import PasswordForm from '@components/passwordGenerator/PasswordForm'
+import PasswordGeneratorApp from '@/components/passwordGenerator'
 const PasswordGenerator = () => {
-  return (
-    <>
-      <PasswordForm />
-    </>
-  )
+  return <PasswordGeneratorApp />
 }
 export default PasswordGenerator

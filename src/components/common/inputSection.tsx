@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Button, Input } from '@/components/common'
 import Card from '@/components/common/Card'
-import { useNameStore } from '@/store/useStore'
+import { useNameStore } from '@/store/useNameStore'
 import styles from '@styles/InputSection.module.scss'
 
 const InputSection = () => {

@@ -3,7 +3,7 @@ import React from 'react'
 import styles from '@styles/Header.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useNameStore } from '@/store/useStore'
+import { useNameStore } from '@/store/useNameStore'
 
 const Header = () => {
   const { name } = useNameStore()
