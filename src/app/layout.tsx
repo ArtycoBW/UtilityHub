@@ -27,6 +27,9 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={`${typefaceBook.variable} ${typefaceRegular.variable}`}>
+      <div className="ellipse1" />
+      <div className="ellipse2" />
+      <div className="ellipse3" />
         {children}
       </body>
     </html>

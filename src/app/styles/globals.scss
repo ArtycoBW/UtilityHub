@@ -25,7 +25,7 @@ html,
 body,
 #root,
 .app {
-  background-color: black;
+  background-color: var(--gray-950);
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -33,6 +33,49 @@ body,
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-image: linear-gradient(rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 1)),
+                  url("/assets/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ellipse1 {
+  position: absolute;
+  width: 81.14px;
+  height: 602px;
+  top: -90.5px;
+  left: -20px;
+  transform: rotate(40.31deg);
+  opacity: 0.15;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  filter: blur(71.5px);
+}
+
+.ellipse2 {
+  position: absolute;
+  width: 495.96px;
+  height: 362.44px;
+  top: -65.6px;
+  left: 109.35px;
+  opacity: 0.1;
+  background: rgba(255, 255, 255, 1);
+  filter: blur(300px);
+}
+
+.ellipse3 {
+  position: absolute;
+  width: 67.77px;
+  height: 602px;
+  top: -57.15px;
+  left: 191px;
+  transform: rotate(40.31deg);
+  opacity: 0.15;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  filter: blur(60px);
 }
 
 
