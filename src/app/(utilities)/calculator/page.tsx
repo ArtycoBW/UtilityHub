@@ -1,4 +1,4 @@
-import CalculatorApp from '@/components/calculator/Calculator'
+import CalculatorApp from '@components/calculator/Calculator'
 import React from 'react'
 
 import styles from '@styles/Calculator.module.scss'

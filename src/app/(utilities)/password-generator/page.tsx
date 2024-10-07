@@ -1,5 +1,5 @@
 import React from 'react'
-import PasswordGeneratorApp from '@/components/passwordGenerator'
+import PasswordGeneratorApp from '@components/passwordGenerator'
 const PasswordGenerator = () => {
   return <PasswordGeneratorApp />
 }
